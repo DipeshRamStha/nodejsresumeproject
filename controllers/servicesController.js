@@ -1,5 +1,5 @@
 const servicesController = (req, res) => {
-  res.render("services");
+  res.render("services", { title: "Services" });
 };
 
 export { servicesController };
