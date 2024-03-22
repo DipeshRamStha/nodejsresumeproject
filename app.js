@@ -6,6 +6,9 @@ import web from "./routes/web.js";
 // Set Template Engine
 app.set("view engine", "ejs");
 
+// Static files
+app.use(express.static("public"));
+
 // Load Routes
 app.use("/", web);
 
